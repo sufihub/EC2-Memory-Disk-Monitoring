@@ -5,7 +5,6 @@ Step 1: Create an AWS EC2 IAM Role and add CloudWatch and SSM Full Access. - Rol
 Step 2: Create a Parameter in Systems Manger with the name "/alarm/AWS-CWAgentLinConfig" and store the value.
 Step 3: Create an EC2 Instance, Attach the role created in Step 1 and Add the commands in the Userdata Section.
 # Commands that needs to be added in Userdata Section
-
 #!/bin/bash
 wget https://s3.amazonaws.com/amazoncloudwatch-agent/linux/amd64/latest/AmazonCloudWatchAgent.zip
 unzip AmazonCloudWatchAgent.zip
