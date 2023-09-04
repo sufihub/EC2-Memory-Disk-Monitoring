@@ -12,7 +12,7 @@ sudo ./install.sh
 sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config -m ec2 -c ssm:/alarm/AWS-CWAgentLinConfig -s
 # Check if EC2 Instance has CWAgent Installed or not
 sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -m ec2 -a status
-Value for the SSM Parameter (/alarm/AWS-CWAgentLinConfig)
+# Value for the SSM Parameter (/alarm/AWS-CWAgentLinConfig)
 {
 	"metrics": {
 		"append_dimensions": {
